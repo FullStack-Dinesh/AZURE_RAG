@@ -52,7 +52,9 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://green-coast-0ce29520f.1.azurestaticapps.net"
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
     allow_credentials=True,
